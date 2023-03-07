@@ -9,11 +9,14 @@ import { useState, useEffect } from "react";
 
 import CounterContract from "../abis/Counter.json";
 import { counteraddress } from "../config";
+import "react-notifications/lib/notifications.css";
 
 function Counter() {
   const [result, setResult] = useState(0);
-  loadCurrentValue();
-  useEffect(() => {}, []);
+
+  useEffect(() => {
+    loadCurrentValue();
+  }, []);
 
   async function loadCurrentValue() {
     try {
@@ -88,30 +91,30 @@ function Counter() {
   }
   return (
     <section>
-      <article>
-        <article className="flex flex-col">
-          <article className="flex align-center">
+      <article className="flex flex-row justify-center">
+        <article className="w-1/3 flex flex-col">
+          <article>
             <input
-              className="border border-blue-700 p-4"
+              className="w-full border border-sky-500 p-4 rounded-lg"
               placeholder="Result"
               type="text"
               value={result}
               disabled
             />
           </article>
-          <article className="flex align-center">
-            <article className="flex flex-row">
-              <div className="grow">
+          <article>
+            <article className="flex flex-row mt-4">
+              <div className="w-1/2 flex justify-center">
                 <button
-                  className="p-4 m-4 text-white rounded-lg shadow-lg :hover bg-gradiant-to-b from-blue-400 to to-green-600"
+                  className="w-3/4 bg-gradient-to-l from-green-600 to to-blue-600 p-4 m-4 ml-0 font-bold text-white rounded-lg shadow-lg hover:from-yellow-500 hover:to-pink-500"
                   onClick={increment}
                 >
                   Increment
                 </button>
               </div>
-              <div className="grow">
+              <div className="w-1/2 justify-center">
                 <button
-                  className="p-4 m-4 text-white rounded-lg shadow-lg :hover bg-gradient-to-t from-green-600 to to-blue-600"
+                  className="w-3/4 bg-gradient-to-l from-blue-600 to to-green-600 p-4 m-4 mr-0 font-bold text-white rounded-lg shadow-lg hover:from-pink-500 hover:to-yellow-500"
                   onClick={decrement}
                 >
                   Decrement
