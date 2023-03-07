@@ -2,7 +2,7 @@
 
 ### [Netlify link of the App](https://counter-onchain.netlify.app/)
 
-## Steps 1: Frontend
+## Step 1: Frontend
 
 ---
 
@@ -38,7 +38,6 @@ npm install react-notifications @mui/material
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind variants;
 ```
 
 6. Configure `tailwind.config.js` file with this content:
