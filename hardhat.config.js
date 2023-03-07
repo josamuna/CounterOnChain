@@ -29,9 +29,9 @@ module.exports = {
   gasReporter: {
     enabled: true,
     noColors: true,
-    // token: "matic",
+    token: "matic",
     currency: "USD",
-    coinmarketcap: process.env.COINMARKETKAT_API8KEY,
+    coinmarketcap: process.env.COINMARKETKAT_API_KEY,
     outputFile: "gasReporter.txt",
   },
   paths: {
