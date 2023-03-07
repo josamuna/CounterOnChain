@@ -3,10 +3,14 @@
 ### [Netlify link of the App](https://counter-onchain.netlify.app/)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Step 1: Frontend
 =======
 ## Steps 1: Frontend
 >>>>>>> 717f5a332f139a9162d71b6fbb5e4db6e2b798ae
+=======
+## Step 1: Frontend
+>>>>>>> d9db17db857bd1f85ee498496702776f38119565
 
 ---
 
